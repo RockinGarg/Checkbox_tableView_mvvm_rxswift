@@ -50,7 +50,5 @@ class RxChecklistController: UIViewController {
             }
             return UITableViewCell()
         }.disposed(by: disposeBag)
-        
-        rxListTableView.rx.header
     }
 }
