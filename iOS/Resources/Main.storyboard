@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wwP-QX-I6I">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="tH4-5b-koL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wwP-QX-I6I" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zbq-Im-1dG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lNE-BO-HCX" kind="relationship" relationship="rootViewController" id="g4H-Xn-egO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fR4-jw-XNA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95.652173913043484" y="75"/>
+        </scene>
+        <!--Types-->
+        <scene sceneID="dAE-TX-IfQ">
+            <objects>
+                <tableViewController storyboardIdentifier="TypeTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lNE-BO-HCX" customClass="TypeTableViewController" customModule="TableChecklistApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="oUK-Qe-sxq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="zds-6C-bK0">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="gp3-h7-myh" style="IBUITableViewCellStyleDefault" id="Z0E-zg-LgL">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z0E-zg-LgL" id="hH6-7D-xHg">
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="RxSwift" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gp3-h7-myh">
+                                                    <rect key="frame" x="20" y="0.0" width="356.5" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="nBr-IK-2qA" kind="show" id="FeW-dg-tZU"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="b4c-mM-dVR" style="IBUITableViewCellStyleDefault" id="WSh-Jp-duj">
+                                        <rect key="frame" x="0.0" y="68" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WSh-Jp-duj" id="Bzk-Q3-r5a">
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Normal Swift" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b4c-mM-dVR">
+                                                    <rect key="frame" x="20" y="0.0" width="356.5" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="t2u-Lc-fng" kind="show" id="qHl-bj-BfV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="lNE-BO-HCX" id="K0l-4i-G0A"/>
+                            <outlet property="delegate" destination="lNE-BO-HCX" id="2oi-UG-Glo"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Types" id="fpZ-gc-4cY"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ul-eU-Nog" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="906" y="75"/>
+        </scene>
+        <!--RxChecklistController-->
+        <scene sceneID="bxT-oc-FKH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RxSwift" referencedIdentifier="RxChecklistController" id="nBr-IK-2qA" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="7jF-XJ-Hvs"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ILf-rj-ioP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1527" y="58"/>
+        </scene>
+        <!--ChecklistController-->
+        <scene sceneID="M7B-cz-War">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Normal" referencedIdentifier="ChecklistController" id="t2u-Lc-fng" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="aEm-1c-Sys"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q5g-p5-rsO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1526" y="89"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
